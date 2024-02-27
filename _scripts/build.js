@@ -2,7 +2,6 @@ const fs = require('fs');
 const { minify } = require("terser");
 
 const files = [
-    "./node_modules/jquery/dist/jquery.js",
     "./src/js/wm.js",
 ];
 

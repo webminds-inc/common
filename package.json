@@ -2,9 +2,6 @@
   "scripts": {
     "build": "node _scripts/build.js"
   },
-  "dependencies": {
-    "jquery": "^3.7.1"
-  },
   "devDependencies": {
     "clean-css": "^5.3.3",
     "terser": "^5.26.0"
