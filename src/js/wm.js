@@ -45,13 +45,13 @@
 				$(this).removeClass('was-validated');
 			}
 		});
-		$('a[data-bs-toggle=modal]').on('click', function () {
+		$('a[data-bs-toggle=modal], a[data-toggle=modal]').on('click', function () {
 			$('.was-validated').removeClass('was-validated');
 		});
 
 		/* bootstrap tooltips */
 		try {
-			$('[data-bs-toggle="tooltip"]').tooltip();
+			$('[data-bs-toggle="tooltip"], [data-toggle="tooltip"]').tooltip();
 		} catch (e) { };
 
 		/* fix bootstrap accordion */
@@ -67,7 +67,7 @@
 			updateCard();
 
 			if (!!($ && history.pushState)) {
-				$('.card [data-bs-toggle="collapse"]').on('click', function () {
+				$('.card [data-bs-toggle="collapse"], .card [data-toggle="collapse"]').on('click', function () {
 					history.pushState({}, '', '#' + $(this).parent().attr('id'));
 				});
 			}
