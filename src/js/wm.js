@@ -68,7 +68,9 @@
 
 			if (!!($ && history.pushState)) {
 				$('.card [data-bs-toggle="collapse"], .card [data-toggle="collapse"]').on('click', function () {
-					history.pushState({}, '', '#' + $(this).parent().attr('id'));
+					if ($(this).parent().attr('id')) {
+						history.pushState({}, '', '#' + $(this).parent().attr('id'));
+					}
 				});
 			}
 		}).on('hashchange', function () {
