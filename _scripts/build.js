@@ -9,6 +9,10 @@ const files = [
     {
         src: ["./src/js/cm.js"],
         dist: "./dist/cm.min.js",
+    },
+    {
+        src: ["./src/js/seal.js"],
+        dist: "./dist/seal.min.js",
     }
 ];
 
